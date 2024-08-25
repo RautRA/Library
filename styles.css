@@ -36,6 +36,10 @@ ul {
     list-style-type: none;
 }
 
+button:hover, button:active {
+    cursor: pointer;
+}
+
 .main-heading {
     font-size: 3.6rem;
     font-weight: 600;
@@ -75,7 +79,6 @@ td button {
 
 td button:hover, td button:active {
     border: 1px solid #222;
-    cursor: pointer;
 }
 
 .add-book-form {
@@ -137,7 +140,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover, button[type="submit"]:active {
     background-color: #197935;
-    cursor: pointer;
 }
 
 .svg-icon {
@@ -152,4 +154,19 @@ button[type="submit"]:hover, button[type="submit"]:active {
 
 .read-status-btn .svg-icon, .remove-btn .svg-icon {
     filter: brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(0%) hue-rotate(241deg) brightness(102%) contrast(94%);
+}
+
+.remove-btn {
+    background-color: #cc0000;
+    color: #fff;
+    border: 0;
+}
+
+.remove-btn:hover, .remove-btn:active {
+    background-color: #b30000;
+    border: 0;
+}
+
+.remove-btn .svg-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg) brightness(118%) contrast(118%);
 }
