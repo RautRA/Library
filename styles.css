@@ -38,6 +38,8 @@ ul {
 
 .main-heading {
     font-size: 3.6rem;
+    font-weight: 600;
+    color: #222;
     margin-bottom: 30px;
 }
 
@@ -63,4 +65,62 @@ th {
 
 th:first-of-type, td:first-of-type {
     padding-left: 0;
+}
+
+.add-book-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 0;
+    font-size: 1.6rem;
+    color: #222;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+fieldset:first-of-type, fieldset:nth-of-type(2) {
+    width: calc(35% - 40px);
+}
+
+fieldset:nth-of-type(3) {
+    width: calc(15% - 40px);
+}
+
+fieldset:last-of-type {
+    width: 15%;
+}
+
+input[type="submit"] {
+    width: 12%;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #1f883d;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+    background-color: #197935;
+    cursor: pointer;
 }
