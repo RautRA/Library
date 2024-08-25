@@ -15,6 +15,9 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 input, button, textarea, select {
@@ -35,4 +38,29 @@ ul {
 
 .main-heading {
     font-size: 3.6rem;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+th, td {
+    font-size: 1.6rem;
+    color: #222;
+    padding: 24px;
+}
+
+th {
+    text-align: left;
+    font-weight: 600;
+}
+
+th:first-of-type, td:first-of-type {
+    padding-left: 0;
 }
