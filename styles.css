@@ -67,6 +67,17 @@ th:first-of-type, td:first-of-type {
     padding-left: 0;
 }
 
+td button {
+    background-color: #fff;
+    padding: 4px 16px;
+    border: 1px solid #d3d3d3;
+}
+
+td button:hover, td button:active {
+    border: 1px solid #222;
+    cursor: pointer;
+}
+
 .add-book-form {
     display: flex;
     flex-wrap: wrap;
@@ -113,14 +124,32 @@ fieldset:last-of-type {
     width: 15%;
 }
 
-input[type="submit"] {
-    width: 12%;
+button[type="submit"] {
+    width: 14%;
+    padding: 5px 10px;
     font-size: 1.6rem;
     color: #fff;
     background-color: #1f883d;
+    border: 0;
+    display: flex;
+    justify-content: center;
 }
 
-input[type="submit"]:hover, input[type="submit"]:active {
+button[type="submit"]:hover, button[type="submit"]:active {
     background-color: #197935;
     cursor: pointer;
+}
+
+.svg-icon {
+    width: 1.6rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(289deg) brightness(104%) contrast(102%);
+    margin-right: 10px;
+}
+
+.read-status-btn, .remove-btn {
+    display: flex;
+}
+
+.read-status-btn .svg-icon, .remove-btn .svg-icon {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(0%) hue-rotate(241deg) brightness(102%) contrast(94%);
 }
