@@ -22,11 +22,13 @@ const myLibrary = [
 const booksTableBody = document.querySelector(".books-table tbody");
 const addBookForm = document.querySelector(".add-book-form");
 
-function Book(title, author, pages, readStatus) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.readStatus = readStatus;
+class Book {
+    constructor(title, author, pages, readStatus) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.readStatus = readStatus;
+    }
 }
 
 function addBookToLibrary(title, author, pages, readStatus) {
